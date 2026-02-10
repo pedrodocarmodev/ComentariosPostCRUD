@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Início</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-dark text-light">
+
+    <div class="container my-5">
+      <div class="card bg-body-tertiary shadow-sm mb-4">
+        <div class="card-body text-center">
+          <h1 class="h3 mb-0">Posts</h1>
+        </div>
+      </div>
+      <div class="card bg-body-tertiary shadow-sm mb-4">
+        <div class="card-body">
+
+          {% for post in posts %}
+            <div class="d-flex justify-content-between align-items-center py-2 border-bottom border-secondary">
+
+              <a
+                href="{% url 'post' post.id %}"
+                class="text-decoration-none text-light fw-medium"
+              >
+                {{ post.titulo }}
+              </a>
+
+              <small class="text-secondary">
+                {{ post.data }}
+              </small>
+
+            </div>
+          {% empty %}
+            <p class="text-secondary text-center mb-0">
+              Nenhum post disponível.
+            </p>
+          {% endfor %}
+
+        </div>
+      </div>
+
+      <p class="text-secondary small text-center">
+        * textos gerados com o intuito de servir apenas como exemplo
+      </p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
