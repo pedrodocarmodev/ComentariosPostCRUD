@@ -1,4 +1,4 @@
-<div align='center'>
+<div align='center' style='display:flex'>
   <img width="50%" alt="Imagem App 1" src="https://github.com/user-attachments/assets/6ae4d086-f86f-4738-b880-fc1549f67f00" />
   <img width="50%" alt="Imagem App 2" src="https://github.com/user-attachments/assets/34347fab-b62a-48d4-9813-17e35f06a3fd" />
 </div>
