@@ -18,9 +18,9 @@ Antes de começar, você precisa ter instalado:
 - pipenv
 
 Para instalar o pipenv:
-```bash
+
 pip install pipenv
-```
+
 ````
 
 ---
