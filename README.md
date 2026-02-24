@@ -3,8 +3,6 @@
   <img width="45%" alt="Imagem App 2" src="https://github.com/user-attachments/assets/34347fab-b62a-48d4-9813-17e35f06a3fd" />
 </div>
 
-````md
-
 ## 🚀 Tecnologias
 
 - Django
@@ -25,8 +23,6 @@ Antes de começar, você precisa ter instalado:
 Para instalar o pipenv:
 
 pip install pipenv
-
-````
 
 ---
 
